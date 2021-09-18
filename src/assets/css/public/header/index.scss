@@ -1,0 +1,40 @@
+@import "./topbar.scss";
+@import "./search.scss";
+
+$m-color:#FFC300;
+$m-hover:#FE8C00;
+
+.m-header {
+  @at-root .layout-default {
+    .el-header {
+      .m-header {
+        width: 100%;
+      }
+    }
+  }
+
+  >.el-row:nth-child(1) {
+    margin: 0 auto;
+    height: 122px;
+    line-height: 40px;
+    padding-bottom: 35px;
+    box-sizing: content-box;
+  }
+
+  >.el-row:nth-child(2) {
+    background: #fff;
+
+    .search-panel {
+      width: 1190px;
+      margin: 0 auto;
+    }
+  }
+
+  >.el-main {
+    overflow: unset;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
